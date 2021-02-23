@@ -13,48 +13,48 @@
 <body>
   <div class="container" id="root">
     <anside>
-      <div class="hamburguer" id="menu-hamburguer">
-        <div class="line" id="line1"></div>
-        <div class="line" id="line2"></div>
-        <div class="line" id="line3"></div>
+      <div class="hamburguer displayFlex" id="menu-hamburguer">
+        <div class="line dimensionW " id="line1"></div>
+        <div class="line dimensionW" id="line2"></div>
+        <div class="line dimensionW" id="line3"></div>
         <span>Fechar</span>
       </div>
-      <nav class="sidebar">
+      <nav class="sidebar dimensionH">
         <ul class="menu">
           <li class="menu-item"><a href="#title0" class="menulink">Início</a></li>
           <li class="menu-item"><a href="#title1" class="menulink">Sobre</a></li>
           <li class="menu-item"><a href="#title2" class="menulink">Pokemons</a></li>
         </ul>
-        <div class="social-media">
+        <div class="social-media dimensionW displayFlex">
           <a href="https://github.com/carinarocha" target="_blank">Carina<img src="images/github.png"></a>
           <a href="https://github.com/JulianaAmoriN" target="_blank">Juliana<img src="images/github.png"></a>
         </div>
       </nav>
     </anside>
-    <header id="title0">
-      <figure class="img-wrapper">
-        <img src="images/sky6.jpg">
+    <header id="title0" class="dimensionW">
+      <figure class="dimensionW dimensionH img-wrapper">
+        <img class="dimensionW dimensionH"src="images/sky.jpg">
       </figure>
       <figure class="pokeball-body">
         <div class="pokeball-motion">
           <div class="pokeball-top"></div>
-          <div class="inside-content">
+          <div class="inside-content displayFlex">
             <h1>Pokélovers</h1>
           </div>
           <div class="pokeball-bottom"></div>
         </div>
       </figure>
     </header>
-    <div class="pokemons">
-      <section class="overlay">
-        <div class="cloudOne"></div>
+    <div class="pokemons dimensionW dimensionH">
+      <section class="overlay dimensionW dimensionH">
+        <div class="cloudOne dimensionW dimensionH"></div>
       </section>
-      <main class="tabs" id="title1">
+      <main class="tabs dimensionW dimensionH displayFlex" id="title1">
         <ul>
           <li>
             <input type="radio" id="tabAbout" name="inputTabs" class="radio-tab" checked>
             <label for="tabAbout" class="tab-label"><b>Sobre</b></label>
-            <div class="about">
+            <div class="about dimensionW">
               <article>
                 Pokémons são criaturas de todas as formas e tamanhos que convivem
                 com os humanos na natureza.<br> Na grande maioria, os pokémons não falam,
@@ -71,7 +71,7 @@
           <li>
             <input type="radio" id="tabAnimation" name="inputTabs" class="radio-tab" checked>
             <label for="tabAnimation" class="tab-label"><b>Animação</b></label>
-            <div class="about">
+            <div class="about dimensionW">
               <article>
                 A série animada do Pokémon é quase tão antiga quanto o surgimento de seu videogame
                 . A série acompanha as aventuras de um jovem audacioso treinador
@@ -92,7 +92,7 @@
           <li>
             <input type="radio" id="tabGame" name="inputTabs" class="radio-tab" checked>
             <label for="tabGame" class="tab-label"><b>Videogame</b></label>
-            <div class="about">
+            <div class="about dimensionW">
               <article>
                 Os primeiros videogames do Pokémon foram lançados para o Nintendo Game Boy em 1998.
                 Desde então, a popularidade dos pokémons não para de crescer. <br> Os jogos do Pokémon
@@ -120,58 +120,52 @@
           </li>
         </ul>
       </main>
-      <footer class="carousel-pokemon">
-        <div class="headerFilter">
-          <h2 id="title2" class="overlay-carousel cloudTwo">Pókemons</h2>
-          <div class="box-filter">
-            <div class="container-input">
-              <div>
-                <figure class="search-btn">
-                  <img class="search-img" src="images/loupe.png">
-                </figure>
-              </div>
-              <input type="text" name="namePokemon" id="textInput" value="Nome do Pokemon"
-                class="input-filter  searchInput animationInput" />
-              <select id="orderInput" class="order-filter animationInput">
-                <option disabled selected value="">Ordenar:</option>
-                <option value="0-251">0-251</option>
-                <option value="A-Z">A-Z</option>
-                <option value="Z-A">Z-A</option>
-              </select>
-              <select id="typeInput" class="type-filter animationInput">
-                <option disabled selected value="">Tipo:</option>
-                <option value="todos">Todos</option>
-                <option value="normal">Normal</option>
-                <option value="steel">Steel</option>
-                <option value="water">Water</option>
-                <option value="dragon">Dragon</option>
-                <option value="electric">Electric</option>
-                <option value="fairy">Fairy</option>
-                <option value="ghost">Ghost</option>
-                <option value="fire">Fire</option>
-                <option value="ice">Ice</option>
-                <option value="grass">Grass</option>
-                <option value="bug">Bug</option>
-                <option value="fighting">Fighting</option>
-                <option value="dark">Dark</option>
-                <option value="rock">Rock</option>
-                <option value="psychic">Psychic</option>
-                <option value="ground">Ground</option>
-                <option value="poison">Poison</option>
-                <option value="flying">Flying</option>
-              </select>
-            </div>
+      <footer class="carousel-pokemon dimensionW dimensionH">
+        <h2 id="title2" class="overlay-carousel cloudTwo dimensionW">Pókemons</h2>
+        <div class="box-filter displayFlex">
+          <div class="container-input">
+            <input type="text" name="namePokemon" id="textInput" value="Nome do Pokemon"
+              class="input-filter  searchInput animationInput" />
+            <select id="orderInput" class="order-filter animationInput">
+              <option disabled selected value="">Ordenar:</option>
+              <option value="0-251">0-251</option>
+              <option value="A-Z">A-Z</option>
+              <option value="Z-A">Z-A</option>
+            </select>
+            <select id="typeInput" class="type-filter animationInput">
+              <option disabled selected value="">Tipo:</option>
+              <option value="todos">Todos</option>
+              <option value="normal">Normal</option>
+              <option value="steel">Steel</option>
+              <option value="water">Water</option>
+              <option value="dragon">Dragon</option>
+              <option value="electric">Electric</option>
+              <option value="fairy">Fairy</option>
+              <option value="ghost">Ghost</option>
+              <option value="fire">Fire</option>
+              <option value="ice">Ice</option>
+              <option value="grass">Grass</option>
+              <option value="bug">Bug</option>
+              <option value="fighting">Fighting</option>
+              <option value="dark">Dark</option>
+              <option value="rock">Rock</option>
+              <option value="psychic">Psychic</option>
+              <option value="ground">Ground</option>
+              <option value="poison">Poison</option>
+              <option value="flying">Flying</option>
+            </select>
           </div>
         </div>
-        <div class="calculusFilter">
+        <div class="calculusFilter displayFlex">
           <p id="calculus"></p>
         </div>
         <div class="carousel" data-motion="right">
-          <div id="pokedex" class="pokedex"></div>
+          <div id="pokedex" class="displayFlex"></div>
         </div>
       </footer>
     </div>
   </div>
 </body>
 <script type="module" src="main.js"></script>
+
 </html>
