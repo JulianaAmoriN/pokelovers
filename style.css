@@ -30,6 +30,19 @@ header {
   display: flex;
 }
 
+.hamburguer,
+.tabs,
+.animationInput {
+  cursor: pointer;
+}
+
+.box-filter,
+.inside-content,
+.calculusFilter {
+  justify-content: center;
+  align-items: center;
+}
+
 .hamburguer {
   width: 2rem;
   height: 2rem;
@@ -39,7 +52,6 @@ header {
   right: 2rem;
   flex-direction: column;
   justify-content: space-evenly;
-  cursor: pointer;
 }
 
 .show-menu .hamburguer {
@@ -79,10 +91,6 @@ header {
   opacity: 0;
 }
 
-.show-menu .hamburguer:hover span {
-  opacity: 1;
-}
-
 .sidebar {
   width: 20rem;
   background-color: rgba(248, 248, 248, 0.87);
@@ -115,11 +123,6 @@ header {
   color: black;
 }
 
-.menulink:hover {
-  color: rgb(173, 21, 21);
-  transition: color 1s;
-}
-
 .social-media {
   position: absolute;
   bottom: 2rem;
@@ -136,7 +139,6 @@ header {
   width: 3rem;
   justify-content: center;
   border: 50%;
-
 }
 
 .img-wrapper img {
@@ -166,33 +168,7 @@ header {
   animation: opening 8s 2ms ease;
 }
 
-.pokeball-top:before {
-  content: "";
-  background-color: #000;
-  width: 80px;
-  height: 50px;
-  border-radius: 0 0 40px 40px;
-  position: absolute;
-  left: 110px;
-  top: 140px;
-}
-
-.pokeball-top:after {
-  content: "";
-  background: radial-gradient(circle, #fffafa, #f8f8ffd0, #fff, #161515f5);
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  border: #000;
-  border-style: solid;
-  border-width: 10px thick;
-  position: absolute;
-  left: 115px;
-  top: 110px;
-}
-
 .inside-content {
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -221,17 +197,6 @@ header {
   z-index: -100;
 }
 
-.pokeball-bottom:before {
-  content: "";
-  background-color: #000;
-  width: 80px;
-  height: 40px;
-  border-radius: 0 0 40px 40px;
-  position: absolute;
-  left: 110px;
-  bottom: 101px;
-}
-
 .pokemons {
   background: linear-gradient(to bottom, #40B5FA, #3EB5F9, #63C7FB, #59C0F9, #39B9F8);
   background-size: cover;
@@ -243,14 +208,6 @@ header {
   overflow: hidden;
 }
 
-.cloudOne {
-  background-image: url(images/cloud.png);
-  background-size: cover;
-  filter: blur(2px);
-  position: absolute;
-  animation: motion 6s linear infinite;
-}
-
 .tabs {
   width: 80vw;
   margin: 0 auto 0 auto;
@@ -260,7 +217,6 @@ header {
 
 .tabs label {
   font-size: 2rem;
-  cursor: pointer;
   text-transform: uppercase;
   margin: auto 15px auto;
 }
@@ -280,7 +236,8 @@ header {
   float: left;
 }
 
-.tabs .radio-tab {
+.tabs .radio-tab,
+.about {
   display: none;
 }
 
@@ -291,17 +248,10 @@ header {
 .about {
   border-top: solid 5px rgb(173, 21, 21);
   margin-top: 2rem;
-  display: none;
   position: absolute;
   height: 70%;
   left: 0;
   overflow: auto;
-}
-
-.about::-webkit-scrollbar {
-  background: linear-gradient(#fae8e3f3, #50b2ebc2, #63c6fbbd, rgba(253, 252, 252, 0.452), rgba(255, 255, 255, 0.432));
-  border-radius: 10px;
-
 }
 
 .about article {
@@ -314,14 +264,6 @@ header {
 .radio-tab:checked~.about {
   display: block;
   position: absolute;
-}
-
-.carousel-pokemon {
-  background-image: url(images/bgpokemon.png);
-  background-size: cover;
-  background-repeat: repeat-x;
-  position: relative;
-  top: -30px;
 }
 
 .carousel-pokemon h2 {
@@ -337,16 +279,7 @@ header {
   overflow: hidden;
 }
 
-.cloudTwo {
-  background-image: url(images/cloudTwo.png);
-  background-size: cover;
-  position: absolute;
-  height: 100%;
-}
-
 .box-filter {
-  justify-content: center;
-  align-items: center;
   margin: 0 auto 0 auto;
   z-index: 100;
   word-wrap: wrap;
@@ -365,13 +298,7 @@ header {
   height: 30px;
   float: left;
   color: #000;
-  cursor: pointer;
   text-transform: uppercase;
-}
-
-.calculusFilter {
-  justify-content: center;
-  align-items: center;
 }
 
 .calculusFilter p {
@@ -399,21 +326,6 @@ header {
   perspective: 1000px;
 }
 
-.carousel::-webkit-scrollbar {
-  opacity: 1;
-}
-
-.carousel::-webkit-scrollbar-button {
-  display: none;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-  background-color: rgb(173, 21, 21);
-  border-radius: 50px;
-  height: 50px;
-  width: 20px;
-}
-
 .card-pokemon {
   width: 230px;
   height: 520px;
@@ -431,11 +343,6 @@ header {
   height: 50%;
   transition: transform 2s;
   transform-style: preserve-3d;
-}
-
-.card-pokemon:hover .flip,
-.card-pokemon:active .flip {
-  transform: rotateX(180deg);
 }
 
 .front-card,
@@ -465,6 +372,99 @@ header {
   border-bottom-style: dotted;
   border-bottom-width: thin;
   margin-top: 3%;
+}
+
+.pokeball-bottom:before {
+  content: "";
+  background-color: #000;
+  width: 80px;
+  height: 40px;
+  border-radius: 0 0 40px 40px;
+  position: absolute;
+  left: 110px;
+  bottom: 101px;
+}
+
+.pokeball-top:before {
+  content: "";
+  background-color: #000;
+  width: 80px;
+  height: 50px;
+  border-radius: 0 0 40px 40px;
+  position: absolute;
+  left: 110px;
+  top: 140px;
+}
+
+.pokeball-top:after {
+  content: "";
+  background: radial-gradient(circle, #fffafa, #f8f8ffd0, #fff, #161515f5);
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: #000;
+  border-style: solid;
+  border-width: 10px thick;
+  position: absolute;
+  left: 115px;
+  top: 110px;
+}
+
+.menulink:hover {
+  color: rgb(173, 21, 21);
+  transition: color 1s;
+}
+
+.show-menu .hamburguer:hover span {
+  opacity: 1;
+}
+
+.card-pokemon:hover .flip,
+.card-pokemon:active .flip {
+  transform: rotateX(180deg);
+}
+
+.about::-webkit-scrollbar {
+  background: linear-gradient(#fae8e3f3, #50b2ebc2, #63c6fbbd, rgba(253, 252, 252, 0.452), rgba(255, 255, 255, 0.432));
+  border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+  opacity: 1;
+}
+
+.carousel::-webkit-scrollbar-button {
+  display: none;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: rgb(173, 21, 21);
+  border-radius: 50px;
+  height: 50px;
+  width: 20px;
+}
+
+.cloudOne {
+  background-image: url(images/cloud.png);
+  background-size: cover;
+  filter: blur(2px);
+  position: absolute;
+  animation: motion 6s linear infinite;
+}
+
+.cloudTwo {
+  background-image: url(images/cloudTwo.png);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+}
+
+.carousel-pokemon {
+  background-image: url(images/bgpokemon.png);
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: relative;
+  top: -30px;
 }
 
 @keyframes opening {
