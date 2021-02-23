@@ -12,6 +12,24 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.dimensionW {
+  width: 100%;
+}
+
+.dimensionH {
+  height: 100%;
+}
+
+.displayFlex {
+  display: flex;
+}
+
 .hamburguer {
   width: 2rem;
   height: 2rem;
@@ -19,7 +37,6 @@ html {
   z-index: 200;
   top: 2rem;
   right: 2rem;
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;
@@ -30,7 +47,6 @@ html {
 }
 
 .line {
-  width: 100%;
   height: 0.1rem;
   background-color: white;
   box-shadow: 0.1rem 0.1rem 5px black;
@@ -69,7 +85,6 @@ html {
 
 .sidebar {
   width: 20rem;
-  height: 100vh;
   background-color: rgba(248, 248, 248, 0.87);
   position: fixed;
   top: 0;
@@ -104,41 +119,27 @@ html {
   color: rgb(173, 21, 21);
   transition: color 1s;
 }
-.social-media{
+
+.social-media {
   position: absolute;
   bottom: 2rem;
-  width: 100%;
-  display: flex;
   justify-content: space-evenly;
 }
+
 .social-media a {
   color: #000;
   text-decoration: none;
 }
-.social-media img{
+
+.social-media img {
   height: 3rem;
   width: 3rem;
-  display: flex;
   justify-content: center;
   border: 50%;
 
 }
 
-header {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  overflow: hidden;
-}
-
-.img-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
 .img-wrapper img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -154,21 +155,6 @@ header {
   animation: bounce 3s linear infinite;
 }
 
-@keyframes bounce {
-  0% {
-    bottom: 50px;
-  }
-  50% {
-    bottom: 20px;
-  }
-  55% {
-    bottom: 25px;
-  }
-  100% {
-    bottom: 50px;
-  }
-}
-
 .pokeball-top {
   width: 300px;
   height: 150px;
@@ -178,21 +164,6 @@ header {
   border-bottom-style: solid;
   border-width: 20px thick;
   animation: opening 8s 2ms ease;
-}
-
-@keyframes opening {
-  0% {
-    transform: rotate(0);
-    transform-origin: bottom;
-  }
-  50% {
-    transform: rotateX(-100deg);
-    transform-origin: top;
-  }
-  100% {
-    transform: rotate(0);
-    transform-origin: bottom;
-  }
 }
 
 .pokeball-top:before {
@@ -221,7 +192,6 @@ header {
 }
 
 .inside-content {
-  display: flex;
   justify-content: center;
   flex-direction: column;
 }
@@ -237,26 +207,6 @@ header {
   transform: scale(-50%, -50%);
   opacity: 0;
   animation: zoom 7s 1s ease-in;
-}
-
-@keyframes zoom {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(2);
-    animation-delay: 5s;
-  }
-
-  55% {
-    transform: scale(0);
-  }
-
-  100% {
-    transform: scale(0);
-    opacity: 1;
-  }
 }
 
 .pokeball-bottom {
@@ -282,45 +232,29 @@ header {
   bottom: 101px;
 }
 
-.pokemons{
-  background: linear-gradient(to bottom ,#40B5FA,#3EB5F9,#63C7FB,#59C0F9,#39B9F8);
+.pokemons {
+  background: linear-gradient(to bottom, #40B5FA, #3EB5F9, #63C7FB, #59C0F9, #39B9F8);
   background-size: cover;
   position: absolute;
-  width: 100%;
-  height: 100%;
 }
 
-.overlay{
+.overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 
-.cloudOne{
+.cloudOne {
   background-image: url(images/cloud.png);
   background-size: cover;
   filter: blur(2px);
   position: absolute;
-  height: 100%;
-  width: 100%;
   animation: motion 6s linear infinite;
-}
-@keyframes motion{
-  0%,100%{
-    transform: translateX(0px);
-  }
-  50%{
-    transform: translateX(50px);
-  }
 }
 
 .tabs {
   width: 80vw;
-  height: 100vh;
   margin: 0 auto 0 auto;
   position: relative;
-  display: flex;
   justify-content: center;
 }
 
@@ -360,13 +294,12 @@ header {
   display: none;
   position: absolute;
   height: 70%;
-  width: 100%;
   left: 0;
   overflow: auto;
 }
 
-.about::-webkit-scrollbar{
-  background: linear-gradient( #fae8e3f3,#50b2ebc2,#63c6fbbd,rgba(253, 252, 252, 0.452),rgba(255, 255, 255, 0.432));
+.about::-webkit-scrollbar {
+  background: linear-gradient(#fae8e3f3, #50b2ebc2, #63c6fbbd, rgba(253, 252, 252, 0.452), rgba(255, 255, 255, 0.432));
   border-radius: 10px;
 
 }
@@ -384,18 +317,13 @@ header {
 }
 
 .carousel-pokemon {
-  background-image: url(images/bgpokemon1.png);
+  background-image: url(images/bgpokemon.png);
   background-size: cover;
   background-repeat: repeat-x;
   position: relative;
   top: -30px;
-  width: 100%;
-  height: 100%;
 }
-.headerFilter{
-  height: 30%;
 
-}
 .carousel-pokemon h2 {
   display: flex;
   justify-content: center;
@@ -403,23 +331,20 @@ header {
   font-size: 2rem;
 }
 
-.overlay-carousel{
+.overlay-carousel {
   position: absolute;
-  width: 100%;
   height: 30%;
   overflow: hidden;
 }
 
-.cloudTwo{
+.cloudTwo {
   background-image: url(images/cloudTwo.png);
   background-size: cover;
   position: absolute;
   height: 100%;
-  width: 100%;
 }
 
 .box-filter {
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto 0 auto;
@@ -427,64 +352,29 @@ header {
   word-wrap: wrap;
 }
 
-.container-input{
+.container-input {
   height: 5%;
-  width: 60px;
-  border-radius: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   z-index: 100;
-  margin-top: 12%;
+  margin-top: 6vh;
 }
 
-.search-btn{
-  display: block;
-  align-items: center;
-  width: 40px;
-  filter: drop-shadow( 1px 1px 3px #000);
-  z-index: 100;
-}
-.search-btn input,
-select {
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-.search-img{
-  width: 50px;
-}
-
-.box-filter, .container-input:hover{
-  width: 70%;
-  padding: 0;
-  transition: 3s ease;
-}
-
-.animationInput{
-  background-color: rgba(0,0,0,0.19);
+.animationInput {
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   height: 30px;
   float: left;
   color: #000;
-  opacity: 0;
   cursor: pointer;
   text-transform: uppercase;
 }
 
-.container-input:hover >.animationInput{
-  opacity: 1;
-  transition: 4s ease;
-}
-
 .calculusFilter {
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
-.calculusFilter p{
+.calculusFilter p {
   text-align: center;
   width: 80%;
   font-family: Bungee, sans-serif;
@@ -524,10 +414,6 @@ select {
   width: 20px;
 }
 
-.pokedex {
-  display: flex;
-}
-
 .card-pokemon {
   width: 230px;
   height: 520px;
@@ -552,10 +438,9 @@ select {
   transform: rotateX(180deg);
 }
 
-.front-card, .back-card {
+.front-card,
+.back-card {
   position: absolute;
-  width: 100%;
-  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: rgba(0, 0, 0, 0.19);
@@ -566,7 +451,6 @@ select {
   transform: rotateX(180deg);
   background-color: rgba(0, 0, 0, 0.644);
   color: white;
-  display: flex;
   flex-direction: column;
   white-space: pre-line;
 }
@@ -575,10 +459,77 @@ select {
   filter: drop-shadow(5px 5px 2px rgb(56, 55, 55));
 }
 
-.cardText{
+.cardText {
   text-align: left;
   border-bottom: #ff0000;
   border-bottom-style: dotted;
   border-bottom-width: thin;
   margin-top: 3%;
+}
+
+@keyframes opening {
+  0% {
+    transform: rotate(0);
+    transform-origin: bottom;
+  }
+
+  50% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+  }
+
+  100% {
+    transform: rotate(0);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes motion {
+
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(2);
+    animation-delay: 5s;
+  }
+
+  55% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 50px;
+  }
+
+  50% {
+    bottom: 20px;
+  }
+
+  55% {
+    bottom: 25px;
+  }
+
+  100% {
+    bottom: 50px;
+  }
 }
