@@ -13,7 +13,7 @@ function printCard(list) {
     return `
      <article class="card-pokemon">
      <ul class="flip">
-     <li class="front-card dimensionW dimensionH positionAbsolute">
+     <li class="front-card ">
          <img class="card-image" src="${card.img}" alt="${card.name}"/>
          <h2 class="card-name">${card.name}</h2>
          <h4 class="card-generet">Geração:${card.generation.name}</h4>
@@ -25,7 +25,7 @@ function printCard(list) {
          <p class="cardText">Peso: ${card.size.weight}</p>
          <p class="cardText card-weaknesses">Fraquezas: ${card.weaknesses.join("|")}</p>
        </li>
-       <li class="back-card dimensionW dimensionH positionAbsolute displayFlex">
+       <li class="back-card displayFlex">
          <h2 class="card-num">${card.num}</h2>
          <p class="cardText">Altura: ${card.size.height}</p>
          <p class="cardText">Peso: ${card.size.weight}</p>
