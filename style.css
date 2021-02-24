@@ -358,7 +358,7 @@ header {
 
 .back-card {
   transform: rotateX(180deg);
-  background-color: rgba(0, 0, 0, 0.644);
+  background-color: rgba(0, 0, 0, 0.800);
   color: white;
   flex-direction: column;
   white-space: pre-line;
