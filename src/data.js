@@ -1,12 +1,12 @@
 export const namePokemon = ((dataPokemon, searchName) =>
-  (dataPokemon.filter(item => item.name.includes(searchName.toLowerCase()))));
-
+  (dataPokemon.filter(item => item.name.includes(searchName.toLowerCase())))
+);
 export const typePokemon = ((dataPokemon, filterType) =>
-  (dataPokemon.filter(item => item.type.includes(filterType))));
-
+  (dataPokemon.filter(item => item.type.includes(filterType)))
+);
 export const calculusPokemon = ((dataPokemon, filterTypePokemon) =>
-  (filterTypePokemon.length * 100 / dataPokemon.length));
-
+  (filterTypePokemon.length * 100 / dataPokemon.length)
+);
 export const orderPokemon = ((dataPokemon, order) => {
   switch (order) {
     case "A-Z":

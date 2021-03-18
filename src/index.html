@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="icon" type="imagem/png" href="images/LogoPokebola.png"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Pokelovers</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Pokelovers</title>
-</head>
-
-<body>
-  <div class="container" id="root">
+  <body class="container" id="root">
     <anside>
       <div class="hamburguer displayFlex" id="menu-hamburguer">
         <div class="line dimensionW " id="line1"></div>
@@ -21,35 +20,32 @@
       </div>
       <nav class="sidebar dimensionH">
         <ul class="menu">
-          <li class="menu-item"><a href="#title0" class="menulink">Início</a></li>
-          <li class="menu-item"><a href="#title1" class="menulink">Sobre</a></li>
-          <li class="menu-item"><a href="#title2" class="menulink">Pokemons</a></li>
+          <li class="menu-item"><a href="#inicioPokebola" class="menulink">Início</a></li>
+          <li class="menu-item"><a href="#sobreTabs" class="menulink">Sobre</a></li>
+          <li class="menu-item"><a href="#cardPokemons" class="menulink">Pokemons</a></li>
         </ul>
         <div class="social-media dimensionW displayFlex">
           <a href="https://github.com/carinarocha" target="_blank">Carina<img src="images/github.png"></a>
-          <a href="https://github.com/JulianaAmoriN" target="_blank">Juliana<img src="images/github.png"></a>
-        </div>
-      </nav>
+          <a href="https://github.com/JulianaAmoriN" target="_blank">Juliana<img src="images/github.png"></a>          </div>
+        </nav>
     </anside>
-    <header id="title0" class="dimensionW">
+    <header id="inicioPokebola" class="dimensionW">
       <figure class="dimensionW dimensionH img-wrapper">
-        <img class="dimensionW dimensionH"src="images/sky.jpg">
+        <img class="dimensionW dimensionH" src="images/sky.jpg">
       </figure>
       <figure class="pokeball-body">
         <div class="pokeball-motion">
           <div class="pokeball-top"></div>
-          <div class="inside-content displayFlex">
-            <h1>Pokélovers</h1>
-          </div>
+          <div class="inside-content displayFlex"><h1>Pokélovers</h1></div>
           <div class="pokeball-bottom"></div>
         </div>
-      </figure>
+        </figure>
     </header>
     <div class="pokemons dimensionW dimensionH">
       <section class="overlay dimensionW dimensionH">
         <div class="cloudOne dimensionW dimensionH"></div>
       </section>
-      <main class="tabs dimensionW dimensionH displayFlex" id="title1">
+      <main class="tabs dimensionW dimensionH displayFlex" id="sobreTabs">
         <ul>
           <li>
             <input type="radio" id="tabAbout" name="inputTabs" class="radio-tab" checked>
@@ -121,7 +117,7 @@
         </ul>
       </main>
       <footer class="carousel-pokemon dimensionW dimensionH">
-        <h2 id="title2" class="overlay-carousel cloudTwo dimensionW">Pókemons</h2>
+        <h2 id="cardPokemons" class="overlay-carousel cloudTwo dimensionW">Pókemons</h2>
         <div class="box-filter displayFlex">
           <div class="container-input">
             <input type="text" name="namePokemon" id="textInput" value="Nome do Pokemon"
@@ -164,8 +160,6 @@
         </div>
       </footer>
     </div>
-  </div>
-</body>
-<script type="module" src="main.js"></script>
-
+  </body>
+  <script type="module" src="main.js"></script>
 </html>
