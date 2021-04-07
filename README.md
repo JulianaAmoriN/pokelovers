@@ -55,7 +55,7 @@ Linguagens e ferramentas usadas para elaboração do projeto :
 ](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 * [<img  src="https://img.shields.io/static/v1?label=JavaScript&message=JS&color=FFF603"/>
  ](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript)
- *[<img  src="https://img.shields.io/static/v1?label=Trello&message=Agile|Kanban&color=0368FF"/>
+* [<img  src="https://img.shields.io/static/v1?label=Trello&message=Agile|Kanban&color=0368FF"/>
  ](https://trello.com/)
 
 
