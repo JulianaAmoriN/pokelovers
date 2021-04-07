@@ -38,7 +38,7 @@
 
 ## Sobre o projeto
 <p align="center">
-<img src="https://ik.imagekit.io/kskmeelzwed/Pok_lovers_RYHTeCo7D.png" width="50%" height="50%">
+<img src="https://github.com/JulianaAmoriN/Pokelovers/blob/master/src/images/LogoPokebola.png?raw=true" width="50%" height="50%">
 </p>
 
 **Pokélovers** é um projeto desenvolvido dentro do **bootcamp da  [Laboratória](https://www.laboratoria.la/br)**. 
