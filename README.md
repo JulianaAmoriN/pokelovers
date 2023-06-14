@@ -12,7 +12,7 @@
     ·
 <a href="https://github.com/JulianaAmoriN/Pokelovers/issues">Reportar Bug</a>
  ·
-<a href="https://julianaamorin.github.io/Pokelovers/">Deploy</a>
+<a href="https://julianaamorin.github.io/pokelovers/">Deploy</a>
 </p>
 
 <details open="open">
